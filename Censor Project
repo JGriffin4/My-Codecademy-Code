@@ -1,0 +1,18 @@
+#This project takes two strings as input (text, word), and returns text with every instance of word censored with asterisks.
+
+def censor(text, word):
+    t = str.split(text)
+    asterisk = "*" * len(word)
+    end = ""
+    for w in t:
+        if w == word:
+            sub = asterisk
+        else:
+            sub = w
+        if len(end) > 0:
+            end += " " + sub
+        else:
+            end += sub
+    return "".join(end)
+    
+censor("hello there", "there")
