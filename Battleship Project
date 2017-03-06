@@ -1,3 +1,5 @@
+#This code creates a small board of "O"s and places a ship behind one. The user is given 3 chances to guess the correct space before the game ends.
+ 
 from random import randint
 
 board = []
@@ -41,4 +43,4 @@ for turn in range(4):
             print "Game Over"
        
         print_board(board)
-    
+  
